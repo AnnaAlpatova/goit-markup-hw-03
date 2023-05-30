@@ -1,0 +1,414 @@
+:root {
+  --main-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+  --primary-brand: #4d5ae5;
+  --focus-color: #404bbf;
+  --primary-text-color: #2e2f42;
+  --accent-green: #31d0aa;
+  --shadow-color: #434455;
+  --dark-shadow-color: #8e8f99;
+  --frame-color: #e7e9fc;
+  --team-background: #f4f4fd;
+  --classic-white: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--shadow-color);
+  background-color: var(--classic-white);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ================= HEADER ================= */
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--frame-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.primary-logotype {
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-brand);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.secondary-logotype {
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-text-color);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.menu {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.link:hover,
+.link:focus {
+  color: var(--focus-color);
+}
+
+.header-menu-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.contact-header {
+  font-style: normal;
+}
+
+.address {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--shadow-color);
+  display: flex;
+  gap: 40px;
+}
+
+.mail {
+  color: var(--shadow-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.tel {
+  color: var(--shadow-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+/* ================= HERO ================= */
+.hero {
+  background-color: var(--primary-text-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.container .hero-container {
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--classic-white);
+  background-color: var(--primary-text-color);
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-main {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--classic-white);
+  background-color: var(--primary-brand);
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-main:hover,
+.button-main:focus {
+  background-color: var(--focus-color);
+}
+
+/* ================= ADVANTAGES ================= */
+.hidden-advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container-advantages {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.advantage {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  margin-bottom: 8px;
+}
+.first-element-advantages {
+  width: calc((100% - 72px) / 4);
+}
+
+.advantage-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--shadow-color);
+}
+/* ================= WORK ================= */
+.work {
+  padding-bottom: 120px;
+}
+
+.work-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+  margin-bottom: 72px;
+}
+.doing {
+  display: flex;
+  gap: 24px;
+}
+
+.doing-item {
+  width: calc((100% - 48px) / 3);
+}
+/* ================= TEAM ================= */
+.team {
+  background-color: var(--team-background);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.employee-cards {
+  display: flex;
+  gap: 24px;
+}
+.team-information {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.team-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  background-color: var(--team-background);
+  margin-bottom: 72px;
+}
+.team-card {
+  background-color: var(--classic-white);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 8px;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--shadow-color);
+  text-align: center;
+}
+/* ================= FOOTER ================= */
+.footer {
+  background-color: var(--primary-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.primary-logotype-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-brand);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.secondary-footer-logotype {
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--team-background);
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-remark {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--team-background);
+  max-width: 264px;
+}
+/* ================= PORTFOLIO ================= */
+.work-menu {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.button-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  background-color: var(--team-background);
+  border: 1px solid var(--frame-color);
+  color: var(--primary-brand);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid var(--frame-color);
+  border-radius: 4px;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--classic-white);
+  background-color: var(--focus-color);
+  border: 1px solid transparent;
+}
+
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.first-images-item {
+  width: calc((100% - 48px) / 3);
+}
+.illustration-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  margin-bottom: 8px;
+}
+
+.illustration-header-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--shadow-color);
+}
+
+.container-illustrations {
+  padding: 32px 16px;
+  border: 1px solid var(--frame-color);
+  border-top: none;
+}
